@@ -1,6 +1,20 @@
+// Transition.js:
+// For page transitions and transition groups.
+
+// Imports
+//////////////////////////////////////////////////////////////////////
+
+// Core
 import React, { PureComponent } from 'react';
+
+// Vendor
 import posed, { PoseGroup } from 'react-pose';
+
+// Vendor
 import { Theme } from 'constants/Theme';
+
+// Begin Component
+//////////////////////////////////////////////////////////////////////
 
 class Transition extends PureComponent {
   render() {
@@ -18,7 +32,7 @@ class Transition extends PureComponent {
     // To enable page transitions on mount / initial load,
     // use the prop `animateOnMount={true}` on `PoseGroup`.
     return (
-      <PoseGroup>
+      <PoseGroup animateOnMount={true}>
         <RoutesContainer key={location.pathname}>{children}</RoutesContainer>
       </PoseGroup>
     );
@@ -26,3 +40,6 @@ class Transition extends PureComponent {
 }
 
 export default Transition;
+
+//////////////////////////////////////////////////////////////////////
+// End Component

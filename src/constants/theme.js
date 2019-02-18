@@ -11,11 +11,29 @@
 // import { Theme } from '../../../path/to/Theme'
 // 2. Use it in your SC: 'color: ${Theme.Color.Primary}; or simply refer to the object and key when used in functions.'
 
+import { Settings } from './site/Settings';
 import { Font } from './styles/Font';
 import { Base } from './styles/Base';
 import { Color } from './styles/Color';
 
 export const Theme = {
+  Site: {
+    Title: Settings.SiteTitle,
+    ShortTitle: Settings.SiteTitleShort,
+    Description: Settings.SiteDescription,
+    Keywords: Settings.SiteBaseKeywords,
+    Url: Settings.SiteUrl,
+    BaseUrl: Settings.PathPrefix,
+    Logo: Settings.Logo,
+    LogoLight: Settings.LogoLight,
+    LogoDark: Settings.LogoDark,
+    Social: {
+      Twitter: Settings.Social.Twitter,
+      Facebook: Settings.Social.Facebook,
+      Instagram: Settings.Social.Instagram,
+      FbAppId: Settings.Social.FbAppId,
+    },
+  },
   Font: {
     Header: Font.Header,
     Body: Font.Body,

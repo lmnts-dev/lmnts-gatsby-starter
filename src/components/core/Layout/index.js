@@ -10,13 +10,14 @@ import React from 'react';
 // Vendor
 import { StaticQuery, graphql } from 'gatsby';
 
-//  Blocks
-import Head from 'components/head';
-import Header from 'components/header';
+//  Components
+import Head from 'components/core/Head';
+import Navigation from 'components/sitewide/Navigation';
+import Footer from 'components/sitewide/Footer';
 
 // Styles
 import GlobalStyle from 'constants/styles/GlobalStyles.scss.js';
-import SiteGrid from 'components/layout/layout.scss';
+import SiteGrid from 'components/core/Layout/layout.scss';
 
 // Begin Component
 //////////////////////////////////////////////////////////////////////
@@ -25,10 +26,9 @@ const Layout = ({ data, children }) => (
   <SiteGrid>
     <GlobalStyle />
     <Head />
-    <SiteGrid.Inner>
-      <Header title={data.site.siteMetadata.siteTitle} />
-      {children}
-    </SiteGrid.Inner>
+    <Navigation />
+    <SiteGrid.Inner>{children}</SiteGrid.Inner>
+    <Footer />
   </SiteGrid>
 );
 

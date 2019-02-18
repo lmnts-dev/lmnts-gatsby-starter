@@ -1,5 +1,12 @@
+// SchemaGenerator.js:
+// This generates JSON-LD schema.org snippets for SEO gains.
+
+// Notes:
 // This does not support nested pages (level 2 and up)
 // If you're working with deeply nested pages, remove this or rework it.
+
+// Begin Helper
+//////////////////////////////////////////////////////////////////////
 
 export default ({
   location,
@@ -48,3 +55,6 @@ export default ({
 
   return schema;
 };
+
+//////////////////////////////////////////////////////////////////////
+// End Helper

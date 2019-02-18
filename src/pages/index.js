@@ -1,24 +1,31 @@
+// Index.js:
+// This is the home page of the website.
+
+// Imports
+//////////////////////////////////////////////////////////////////////
+
+// Core
 import React from 'react';
-import Layout from 'components/layout';
-import IOExample from 'components/io/example';
-import Modal from 'containers/modal';
+
+// Components
+import Layout from 'components/core/Layout';
+
+// Constants
+import { Theme } from 'constants/Theme';
+
+// Begin Component
+//////////////////////////////////////////////////////////////////////
 
 const Index = ({ data }) => (
   <Layout>
     <div>
-      <h1>Laxalt & McIver Gatsby Starter.</h1>
-      <Modal>
-        <video
-          src="https://i.imgur.com/gzFqNSW.mp4"
-          playsInline
-          loop
-          autoPlay
-          muted
-        />
-      </Modal>
+      <h1>{Theme.Site.Title}</h1>
+      <p>{Theme.Site.Description}</p>
     </div>
-    <IOExample />
   </Layout>
 );
 
 export default Index;
+
+//////////////////////////////////////////////////////////////////////
+// End Component

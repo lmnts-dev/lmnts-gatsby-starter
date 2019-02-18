@@ -1,5 +1,17 @@
+// Index.js:
+// This is the home page of the website.
+
+// Imports
+//////////////////////////////////////////////////////////////////////
+
+// Core
 import React from 'react';
-import Layout from 'components/layout';
+
+// Components
+import Layout from 'components/core/Layout';
+
+// Begin Component
+//////////////////////////////////////////////////////////////////////
 
 const NotFound = () => (
   <Layout>
@@ -8,3 +20,6 @@ const NotFound = () => (
 );
 
 export default NotFound;
+
+//////////////////////////////////////////////////////////////////////
+// End Component

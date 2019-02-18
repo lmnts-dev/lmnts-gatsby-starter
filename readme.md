@@ -115,8 +115,8 @@ module.exports = {
 │   ├── constants # Site-wide constants (breakpoints, colors, etc.)
 │   ├── containers # Container components if store is needed
 │   ├── helpers
-│   │   ├── schemaGenerator.js # Generates JSON-LD schema.org snippets
-│   │   └── mediaTemplates.js # Creates media queries for styled-components
+│   │   ├── SchemaGenerator.js # Generates JSON-LD schema.org snippets
+│   │   └── MediaQueries.js # Creates media queries for styled-components
 │   ├── images # Images needed by the site/theme (not content)
 │   ├── pages
 │   ├── store # Store and provider of a React.createContext instance
