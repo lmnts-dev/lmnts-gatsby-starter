@@ -22,10 +22,13 @@ const FooterStyle = styled.footer`
 `;
 
 FooterStyle.Inner = styled(InnerStyle)`
-  background-color: ${Theme.Color.Primary};
-  padding-top: ${Base.Size / 4 + 'px'};
-  padding-bottom: ${Base.Size / 4 + 'px'};
+  border-top: ${Theme.Color.Gray} 1px solid;
+  background-color: ${Theme.Color.White};
+  padding-top: ${Base.Size / 2 + 'px'};
+  padding-bottom: ${Base.Size + 'px'};
   color: ${Theme.Color.Black};
+  display: flex;
+  flex-direction: column;
 `;
 
 export default FooterStyle;

@@ -8,9 +8,9 @@
 const path = require('path');
 
 module.exports = {
-  siteTitle: `Laxalt & McIver`,
+  siteTitle: `Kylie's Website`,
   siteTitleShort: `lmnts-gatsby-starter`,
-  siteDescription: `An opinionated starter for Gatsby.`,
+  siteDescription: `Lorem ipsum sit dit imet dolor elum.`,
   siteBaseKeywords: `design, graphic design`,
   siteUrl: `https://laxaltandmciver.co/`,
   themeColor: `LightBlue`,

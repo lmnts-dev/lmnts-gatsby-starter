@@ -7,13 +7,25 @@
 // Core
 import React from 'react';
 
+// Constants
+import { Theme } from 'constants/Theme';
+
 // Styles
 import FooterStyle from 'components/sitewide/Footer/styles.scss';
 
+// Begin Component
+//////////////////////////////////////////////////////////////////////
+
 const Footer = () => (
   <FooterStyle>
-    <FooterStyle.Inner>Footer</FooterStyle.Inner>
+    <FooterStyle.Inner>
+      <strong>{Theme.Site.Title}</strong>
+      <span>© {new Date().getFullYear()}</span>
+    </FooterStyle.Inner>
   </FooterStyle>
 );
 
 export default Footer;
+
+//////////////////////////////////////////////////////////////////////
+// End Component

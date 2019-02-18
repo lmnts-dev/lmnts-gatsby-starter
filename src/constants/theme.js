@@ -89,5 +89,6 @@ export const Theme = {
     Background: Color.Secondary,
     White: Color.White,
     Black: Color.Black,
+    Gray: Color.Gray,
   },
 };

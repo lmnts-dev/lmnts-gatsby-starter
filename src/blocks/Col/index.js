@@ -10,6 +10,10 @@ import React from 'react';
 // Styles
 import ColStyle from 'blocks/Col/styles.scss';
 
+// Begin Component
+//////////////////////////////////////////////////////////////////////
 const Col = ({ children, FullWidth }) => <ColStyle>{children}</ColStyle>;
 
 export default Col;
+//////////////////////////////////////////////////////////////////////
+// End Component

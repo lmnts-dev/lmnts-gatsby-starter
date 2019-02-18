@@ -23,13 +23,13 @@ const NavigationStyle = styled.nav`
   display: flex;
   justify-content: center;
   ${Theme.Base.Grid.Nav.Fixed
-      ? `
+    ? `
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   `
-      : `
+    : `
   position: relative;
   `};
 `;
@@ -61,3 +61,4 @@ NavigationStyle.Row = RowStyle;
 export default NavigationStyle;
 
 //////////////////////////////////////////////////////////////////////
+// End Styles

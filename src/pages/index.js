@@ -10,6 +10,11 @@ import React from 'react';
 // Components
 import Layout from 'components/core/Layout';
 
+// Blocks
+import Row from 'blocks/Row';
+// import Inner from 'blocks/Inner';
+// import Col from 'blocks/Col';
+
 // Constants
 import { Theme } from 'constants/Theme';
 
@@ -18,10 +23,10 @@ import { Theme } from 'constants/Theme';
 
 const Index = ({ data }) => (
   <Layout>
-    <div>
+    <Row FlexDir="column">
       <h1>{Theme.Site.Title}</h1>
       <p>{Theme.Site.Description}</p>
-    </div>
+    </Row>
   </Layout>
 );
 
