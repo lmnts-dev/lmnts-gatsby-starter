@@ -22,15 +22,16 @@ export const Base = {
   Grid: {
     Nav: {
       Orientation: `top`,
+      Fixed: false,
       Size: {
-        Lg: 200, // px
+        Lg: 55, // px
         Md: 150, // px
         Sm: 40, // px
       },
     },
     Gutter: {
-      Top: 20, // px
-      Bottom: 20, // px
+      Top: 10, // px
+      Bottom: 0, // px
       Right: 20, // px
       Left: 20, // px
     },

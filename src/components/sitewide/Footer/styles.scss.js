@@ -25,7 +25,7 @@ FooterStyle.Inner = styled(InnerStyle)`
   background-color: ${Theme.Color.Primary};
   padding-top: ${Base.Size / 4 + 'px'};
   padding-bottom: ${Base.Size / 4 + 'px'};
-  color: ${Theme.Color.White};
+  color: ${Theme.Color.Black};
 `;
 
 export default FooterStyle;

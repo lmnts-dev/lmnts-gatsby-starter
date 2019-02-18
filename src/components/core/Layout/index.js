@@ -22,7 +22,7 @@ import SiteGrid from 'components/core/Layout/styles.scss';
 // Begin Component
 //////////////////////////////////////////////////////////////////////
 
-const Layout = ({ data, children }) => (
+const Layout = ({ data, children, FlexDir }) => (
   <SiteGrid>
     <GlobalStyle />
     <Head />

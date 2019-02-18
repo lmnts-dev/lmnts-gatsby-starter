@@ -358,6 +358,15 @@ html {
     display: block;
   }
 
+
+  ul {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+  }
+
   html {
     font-size: ${Theme.Base.FontSize};
   }
@@ -367,7 +376,7 @@ html {
     line-height: 1;
     font-size: 1rem;
     color: ${Theme.Color.Black};
-    background-color: ${Theme.Color.White};
+    background-color: ${Theme.Color.Background};
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -397,7 +406,10 @@ html {
   }
 
   a {
-    color: palevioletred;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   pre {
@@ -417,11 +429,21 @@ html {
     max-width: 100%;
   }
 
+  p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+
   p {
-    margin-bottom: 2rem;
+    font-family: ${Theme.Font.Body};
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: ${Theme.Font.Header};
   }
 
   * { 
     box-sizing: border-box;
   }
+
+
 `;

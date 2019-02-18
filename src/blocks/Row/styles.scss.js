@@ -1,7 +1,5 @@
-// <Inner> Styles:
-// This is the primary site grid. It's the max width and the gutter
-// of the site, and one of the most fundamental components in terms
-// of structure.
+// <Row> Styles:
+// This is the primary Row style of the site.
 
 // Imports
 //////////////////////////////////////////////////////////////////////
@@ -13,14 +11,15 @@ import styled from 'styled-components';
 import { Theme } from 'constants/Theme';
 
 // Begin Styles
-export const InnerStyle = styled.div`
+export const RowStyle = styled.section`
   width: 100%;
-  padding-left: ${Theme.Base.Grid.Gutter.Lg.Left};
-  padding-right: ${Theme.Base.Grid.Gutter.Lg.Right};
   margin: 0 auto;
   display: flex;
   max-width: ${props => (props.FullWidth ? '100%' : Theme.Base.SiteWidth)};
+  justify-content: ${props => (props.Justify ? props.Justify : 'flex-start')};
+  flex-direction: ${props => (props.FlexDir ? props.FlexDir : 'row')};
+  align-items: ${props => (props.AlignItems ? props.AlignItems : 'flex-start')};
 `;
 
-export default InnerStyle;
+export default RowStyle;
 //////////////////////////////////////////////////////////////////////
