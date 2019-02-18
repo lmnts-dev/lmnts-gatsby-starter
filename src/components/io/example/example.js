@@ -1,6 +1,6 @@
 import React from 'react';
 import IO from 'components/io';
-import { Container } from './io-example.css';
+import { Container } from './example.css';
 
 // <IO> uses a render prop to pass down `isVisible` and `hasBeenVisible`.
 // In this example, we only care about `isVisible` and reset the styles

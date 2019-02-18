@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from 'components/layout';
-import IOExample from 'components/io-example';
+import IOExample from 'components/io/example';
 import Modal from 'containers/modal';
 
 const Index = ({ data }) => (

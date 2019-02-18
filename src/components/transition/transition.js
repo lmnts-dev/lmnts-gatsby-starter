@@ -1,13 +1,17 @@
 import React, { PureComponent } from 'react';
 import posed, { PoseGroup } from 'react-pose';
-import { timeout } from 'constants/transition';
+import { Theme } from 'constants/Theme';
 
 class Transition extends PureComponent {
   render() {
     const { children, location } = this.props;
 
     const RoutesContainer = posed.div({
-      enter: { opacity: 1, delay: timeout, delayChildren: timeout },
+      enter: {
+        opacity: 1,
+        delay: Theme.Base.PageTransition,
+        delayChildren: Theme.Base.PageTransition,
+      },
       exit: { opacity: 0 },
     });
 

@@ -1,16 +1,35 @@
+// Layout Component:
+// This is the sitewide wrapper of all the content on the site.
+
+// Imports
+//////////////////////////////////////////////////////////////////////
+
+// Core
 import React from 'react';
+
+// Vendor
 import { StaticQuery, graphql } from 'gatsby';
+
+//  Blocks
 import Head from 'components/head';
 import Header from 'components/header';
-import GlobalStyle from 'global.css.js';
+
+// Styles
+import GlobalStyle from 'constants/styles/GlobalStyles.scss.js';
+import SiteGrid from 'components/layout/layout.scss';
+
+// Begin Component
+//////////////////////////////////////////////////////////////////////
 
 const Layout = ({ data, children }) => (
-  <main>
+  <SiteGrid>
     <GlobalStyle />
     <Head />
-    <Header title={data.site.siteMetadata.siteTitle} />
-    {children}
-  </main>
+    <SiteGrid.Inner>
+      <Header title={data.site.siteMetadata.siteTitle} />
+      {children}
+    </SiteGrid.Inner>
+  </SiteGrid>
 );
 
 const LayoutWithQuery = props => (
@@ -29,3 +48,6 @@ const LayoutWithQuery = props => (
 );
 
 export default LayoutWithQuery;
+
+//////////////////////////////////////////////////////////////////////
+// End Component
