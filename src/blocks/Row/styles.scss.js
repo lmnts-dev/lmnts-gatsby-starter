@@ -11,10 +11,15 @@ import styled from 'styled-components';
 import { Theme } from 'constants/Theme';
 
 // Begin Styles
+//////////////////////////////////////////////////////////////////////
 export const RowStyle = styled.section`
   width: 100%;
   margin: 0 auto;
   display: flex;
+  padding-left: ${Theme.Base.Grid.Gutter.Lg.Left};
+  padding-right: ${Theme.Base.Grid.Gutter.Lg.Right};
+
+  /* Options */
   max-width: ${props => (props.FullWidth ? '100%' : Theme.Base.SiteWidth)};
   justify-content: ${props => (props.Justify ? props.Justify : 'flex-start')};
   flex-direction: ${props => (props.FlexDir ? props.FlexDir : 'row')};
@@ -23,3 +28,4 @@ export const RowStyle = styled.section`
 
 export default RowStyle;
 //////////////////////////////////////////////////////////////////////
+// End Styles

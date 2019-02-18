@@ -8,7 +8,10 @@
 import React from 'react';
 
 // Styles
-import RowStyle from 'blocks/Inner/styles.scss';
+import { RowStyle } from 'blocks/Row/styles.scss';
+
+// Begin Block
+//////////////////////////////////////////////////////////////////////
 
 const Row = ({ children, FullWidth, Justify, FlexDir, AlignItems }) => (
   <RowStyle
@@ -22,3 +25,6 @@ const Row = ({ children, FullWidth, Justify, FlexDir, AlignItems }) => (
 );
 
 export default Row;
+
+//////////////////////////////////////////////////////////////////////
+// End Block

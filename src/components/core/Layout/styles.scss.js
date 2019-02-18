@@ -39,8 +39,6 @@ SiteGrid.Inner = styled(InnerStyle)`
     ? Base.Grid.Nav.Size.Lg + Base.Grid.Gutter.Top + 'px'
     : Theme.Base.Grid.Gutter.Lg.Top};
   padding-bottom: ${Theme.Base.Grid.Gutter.Lg.Bottom};
-  padding-left: ${Theme.Base.Grid.Gutter.Lg.Left};
-  padding-right: ${Theme.Base.Grid.Gutter.Lg.Right};
 `;
 
 export default SiteGrid;

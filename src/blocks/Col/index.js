@@ -12,8 +12,10 @@ import ColStyle from 'blocks/Col/styles.scss';
 
 // Begin Component
 //////////////////////////////////////////////////////////////////////
-const Col = ({ children, FullWidth }) => <ColStyle>{children}</ColStyle>;
+
+const Col = ({ children }) => <ColStyle>{children}</ColStyle>;
 
 export default Col;
+
 //////////////////////////////////////////////////////////////////////
 // End Component

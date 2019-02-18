@@ -12,8 +12,8 @@ import { Base } from 'constants/styles/Base';
 
 // Blocks
 import InnerStyle from 'blocks/Inner/styles.scss';
-import RowStyle from 'blocks/Row/styles.scss';
 import ColStyle from 'blocks/Col/styles.scss';
+import Row from 'blocks/Row';
 
 // Begin Styles
 //////////////////////////////////////////////////////////////////////
@@ -56,7 +56,7 @@ NavigationStyle.Col = styled(ColStyle)`
   }
 `;
 
-NavigationStyle.Row = RowStyle;
+NavigationStyle.Row = Row;
 
 export default NavigationStyle;
 

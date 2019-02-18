@@ -15,8 +15,7 @@ import { Theme } from 'constants/Theme';
 // Begin Styles
 export const InnerStyle = styled.div`
   width: 100%;
-  padding-left: ${Theme.Base.Grid.Gutter.Lg.Left};
-  padding-right: ${Theme.Base.Grid.Gutter.Lg.Right};
+  position: relative;
   margin: 0 auto;
   display: flex;
   max-width: ${props => (props.FullWidth ? '100%' : Theme.Base.SiteWidth)};

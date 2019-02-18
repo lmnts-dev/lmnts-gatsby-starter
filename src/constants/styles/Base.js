@@ -6,7 +6,7 @@
 export const Base = {
   Size: 60, // px
   Radius: 10, // px
-  SiteWidth: 1024, // px
+  SiteWidth: 1440, // px
   FontSize: 14, // px
   Transition: 0.25, // seconds
   PageTransition: 250, // milliseconds
@@ -33,8 +33,8 @@ export const Base = {
     Gutter: {
       Top: 10, // px
       Bottom: 0, // px
-      Right: 45, // px
-      Left: 45, // px
+      Right: 20, // px
+      Left: 20, // px
     },
   },
 };

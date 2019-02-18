@@ -8,7 +8,7 @@
 const path = require('path');
 
 module.exports = {
-  siteTitle: `Kylie's Website`,
+  siteTitle: `Laxalt & McIver`,
   siteTitleShort: `lmnts-gatsby-starter`,
   siteDescription: `Lorem ipsum sit dit imet dolor elum.`,
   siteBaseKeywords: `design, graphic design`,
