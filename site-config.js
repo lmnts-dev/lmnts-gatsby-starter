@@ -8,15 +8,15 @@
 const path = require('path');
 
 module.exports = {
-  siteTitle: `Laxalt & McIver`,
+  siteTitle: `L&M Gatsby Starter`,
   siteTitleShort: `lmnts-gatsby-starter`,
-  siteDescription: `Lorem ipsum sit dit imet dolor elum.`,
+  siteDescription: `Making the web more scalable, accessible, and flexible. Since 2014.`,
   siteBaseKeywords: `design, graphic design`,
   siteUrl: `https://laxaltandmciver.co/`,
   themeColor: `LightBlue`,
   secondaryColor: `LightSalmon`,
   backgroundColor: `#fff`,
-  pathPrefix: null,
+  pathPrefix: '/',
   logo: path.resolve(__dirname, 'src/images/icon.png'),
   logoLight: path.resolve(__dirname, 'src/images/icon.png'),
   logoDark: path.resolve(__dirname, 'src/images/icon.png'),

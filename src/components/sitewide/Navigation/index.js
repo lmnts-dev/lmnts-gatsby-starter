@@ -6,6 +6,7 @@
 
 // Core
 import React from 'react';
+import { Link } from 'gatsby';
 
 // Vendor
 // import Img from 'gatsby-image';
@@ -24,25 +25,25 @@ const Navigation = () => (
     <NavigationStyle.Inner>
       <NavigationStyle.Row AlignItems="center" JustifyContent="space-between">
         <NavigationStyle.Col>
-          <a href={Theme.Site.Url}>
+          <Link to={Theme.Site.BaseUrl}>
             <img
               src="https://cdn.dribbble.com/users/1826170/avatars/normal/56c47446d104c3768bbd90d907b1f238.jpg?1518642823"
               alt={Theme.Site.Title}
               height="30px"
             />
-          </a>
+          </Link>
         </NavigationStyle.Col>
         <NavigationStyle.Col>
           <ul>
-            <a href="/">
+            <Link to="/work">
               <li>Work</li>
-            </a>
-            <a href="/">
+            </Link>
+            <Link to="/about">
               <li>About</li>
-            </a>
-            <a href="/">
+            </Link>
+            <Link to="/contact">
               <li>Contact</li>
-            </a>
+            </Link>
           </ul>
         </NavigationStyle.Col>
       </NavigationStyle.Row>
