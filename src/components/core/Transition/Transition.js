@@ -10,7 +10,7 @@ import React, { PureComponent } from 'react';
 // Vendor
 import posed, { PoseGroup } from 'react-pose';
 
-// Vendor
+// Constants
 import { Theme } from 'constants/Theme';
 
 // Begin Component

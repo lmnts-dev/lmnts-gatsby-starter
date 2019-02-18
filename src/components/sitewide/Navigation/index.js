@@ -8,8 +8,14 @@
 import React from 'react';
 
 // Styles
-import NavigationStyle from 'components/sitewide/Navigation/navigation.scss';
+import NavigationStyle from 'components/sitewide/Navigation/styles.scss';
 
-const Navigation = () => <NavigationStyle>Navigation</NavigationStyle>;
+const Navigation = () => (
+  <NavigationStyle>
+    <NavigationStyle.Inner>
+      <div>Navigation</div>
+    </NavigationStyle.Inner>
+  </NavigationStyle>
+);
 
 export default Navigation;

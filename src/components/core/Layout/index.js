@@ -17,7 +17,7 @@ import Footer from 'components/sitewide/Footer';
 
 // Styles
 import GlobalStyle from 'constants/styles/GlobalStyles.scss.js';
-import SiteGrid from 'components/core/Layout/layout.scss';
+import SiteGrid from 'components/core/Layout/styles.scss';
 
 // Begin Component
 //////////////////////////////////////////////////////////////////////

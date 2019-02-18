@@ -6,7 +6,7 @@
 export const Base = {
   Size: 60, // px
   Radius: 10, // px
-  SiteWidth: 1024, // px
+  SiteWidth: 1440, // px
   FontSize: 14, // px
   Transition: 0.25, // seconds
   PageTransition: 250, // milliseconds

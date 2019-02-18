@@ -6,8 +6,8 @@
 import { Settings } from '../site/Settings';
 
 export const Color = {
-  Primary: Settings.themeColor,
-  Secondary: Settings.secondaryColor,
+  Primary: 'LightBlue',
+  Secondary: 'PaleVioletRed',
   White: `#ffffff`,
   Black: `#000000`,
 };

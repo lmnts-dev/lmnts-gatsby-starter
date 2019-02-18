@@ -9,12 +9,15 @@ import styled from 'styled-components';
 // Constants
 import { Theme } from 'constants/Theme';
 
+// Blocks
+import Inner from 'blocks/Inner';
+
 // Begin Styles
 //////////////////////////////////////////////////////////////////////
 
 const SiteGrid = styled.main`
   width: 100%;
-  background-color: ${Theme.Color.Secondary};
+  background-color: ${Theme.Color.White};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,10 +25,9 @@ const SiteGrid = styled.main`
   min-height: 100vh;
 `;
 
-SiteGrid.Inner = styled.div`
+SiteGrid.Inner = styled(Inner)`
   /* Core styles */
   width: 100%;
-  max-width: ${Theme.Base.SiteWidth};
   display: flex;
   flex-direction: column;
 

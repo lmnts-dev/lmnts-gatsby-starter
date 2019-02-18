@@ -8,12 +8,10 @@
 import React from 'react';
 
 // Styles
-import FooterStyle from 'components/sitewide/Footer/styles.scss';
+import InnerStyle from 'blocks/Inner/styles.scss';
 
-const Footer = () => (
-  <FooterStyle>
-    <FooterStyle.Inner>Footer</FooterStyle.Inner>
-  </FooterStyle>
+const Inner = ({ children, FullWidth }) => (
+  <InnerStyle FullWidth={FullWidth}>{children}</InnerStyle>
 );
 
-export default Footer;
+export default Inner;
