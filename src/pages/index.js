@@ -23,7 +23,15 @@ import { Theme } from 'constants/Theme';
 
 const Index = ({ data }) => (
   <Layout>
-    <Row FlexDir="column">
+    <Row
+      FlexDir="column"
+      Background={Theme.Color.Warning}
+      PaddingTop={Theme.Base.Size}
+      PaddingBottom={Theme.Base.Size}
+      MinHeight='40vh'
+      JustifyContent='center'
+      TextColor={Theme.Color.White}
+    >
       <h1>{Theme.Site.Title}</h1>
       <p>{Theme.Site.Description}</p>
     </Row>

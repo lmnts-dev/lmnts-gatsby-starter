@@ -54,6 +54,7 @@ export const Theme = {
     Grid: {
       Nav: {
         Fixed: Base.Grid.Nav.Fixed,
+        LogoPosition: Base.Grid.Nav.LogoPosition,
         Orientation: Base.Grid.Nav.Orientation,
         Size: {
           Lg: Base.Grid.Nav.Size.Lg + 'px',
@@ -90,5 +91,7 @@ export const Theme = {
     White: Color.White,
     Black: Color.Black,
     Gray: Color.Gray,
+    Warning: Color.Warning,
+    Success: Color.Success,
   },
 };

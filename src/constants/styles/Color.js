@@ -9,4 +9,6 @@ export const Color = {
   White: `#ffffff`,
   Black: `#000000`,
   Gray: `#CCD0D6`,
+  Warning: `PaleVioletRed`,
+  Success: `PaleGreen`,
 };

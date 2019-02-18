@@ -22,7 +22,7 @@ import { Theme } from 'constants/Theme';
 const Navigation = () => (
   <NavigationStyle>
     <NavigationStyle.Inner>
-      <NavigationStyle.Row AlignItems="center" Justify="space-between">
+      <NavigationStyle.Row AlignItems="center" JustifyContent="space-between">
         <NavigationStyle.Col>
           <a href={Theme.Site.Url}>
             <img

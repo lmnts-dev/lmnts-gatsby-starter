@@ -13,12 +13,32 @@ import { RowStyle } from 'blocks/Row/styles.scss';
 // Begin Block
 //////////////////////////////////////////////////////////////////////
 
-const Row = ({ children, FullWidth, Justify, FlexDir, AlignItems }) => (
+const Row = ({
+  children,
+  FullWidth,
+  JustifyContent,
+  FlexDir,
+  AlignItems,
+  Background,
+  PaddingLeft,
+  PaddingRight,
+  PaddingTop,
+  PaddingBottom,
+  TextColor,
+  MinHeight,
+}) => (
   <RowStyle
     FullWidth={FullWidth}
-    Justify={Justify}
+    JustifyContent={JustifyContent}
     FlexDir={FlexDir}
     AlignItems={AlignItems}
+    Background={Background}
+    PaddingLeft={PaddingLeft}
+    PaddingRight={PaddingRight}
+    PaddingTop={PaddingTop}
+    PaddingBottom={PaddingBottom}
+    TextColor={TextColor}
+    MinHeight={MinHeight}
   >
     {children}
   </RowStyle>
