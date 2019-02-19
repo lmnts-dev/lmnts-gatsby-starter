@@ -7,12 +7,18 @@
 
 import React from 'react';
 import Transition from 'components/core/Transition';
+import Navigation from 'components/sitewide/Navigation';
 
-const WrapPageElement = ({ element, props }) => {
-  return <Transition {...props}>{element}</Transition>;
+const wrapPageElement = ({ element, props }) => {
+  return (
+    <>
+      <Navigation />
+      <Transition {...props}>{element}</Transition>
+    </>
+  );
 };
 
-export default WrapPageElement;
+export default wrapPageElement;
 
 //////////////////////////////////////////////////////////////////////
 // End Helper

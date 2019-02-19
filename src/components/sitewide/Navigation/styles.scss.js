@@ -14,6 +14,7 @@ import { Base } from 'constants/styles/Base';
 import InnerStyle from 'blocks/Inner/styles.scss';
 import ColStyle from 'blocks/Col/styles.scss';
 import Row from 'blocks/Row';
+import Navigation from '.';
 
 // Begin Styles
 //////////////////////////////////////////////////////////////////////
@@ -28,6 +29,7 @@ const NavigationStyle = styled.nav`
   top: 0;
   left: 0;
   right: 0;
+  z-index: 800;
   `
     : `
   position: relative;

@@ -87,7 +87,7 @@ export const Theme = {
   Color: {
     Primary: Color.Primary,
     Secondary: Color.Secondary,
-    Background: Color.Secondary,
+    Background: Color.Background,
     White: Color.White,
     Black: Color.Black,
     Gray: Color.Gray,

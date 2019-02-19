@@ -2,7 +2,7 @@ import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { ServerStyleSheet } from 'styled-components';
 import AppProvider from 'store/provider';
-import WrapPageElementWithTransition from 'helpers/WrapPageElement';
+import WrapPageElementWithTransition from 'helpers/wrapPageElement';
 
 export const replaceRenderer = ({
   bodyComponent,
@@ -21,4 +21,4 @@ export const replaceRenderer = ({
 };
 
 // Page Transitions
-export const WrapPageElement = WrapPageElementWithTransition;
+export const wrapPageElement = WrapPageElementWithTransition;

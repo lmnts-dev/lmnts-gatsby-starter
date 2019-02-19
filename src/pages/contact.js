@@ -28,8 +28,8 @@ const Index = ({ data }) => (
       Background={Theme.Color.Success}
       PaddingTop={Theme.Base.Size}
       PaddingBottom={Theme.Base.Size}
-      MinHeight='40vh'
-      JustifyContent='center'
+      MinHeight="40vh"
+      JustifyContent="center"
       TextColor={Theme.Color.Black}
     >
       <h1>Contact</h1>

@@ -6,10 +6,10 @@
 export const Base = {
   Size: 60, // px
   Radius: 10, // px
-  SiteWidth: 3200, // px
+  SiteWidth: 1280, // px
   FontSize: 14, // px
   Transition: 0.25, // seconds
-  PageTransition: 250, // milliseconds
+  PageTransition: 800, // milliseconds
 
   // Responsive Breakpoints
   Media: {
@@ -22,7 +22,7 @@ export const Base = {
   Grid: {
     Nav: {
       Orientation: `top`,
-      Fixed: false,
+      Fixed: true,
       LogoPosition: null,
       Size: {
         Lg: 55, // px
@@ -33,8 +33,8 @@ export const Base = {
     Gutter: {
       Top: 0, // px
       Bottom: 0, // px
-      Right: 50, // px
-      Left: 50, // px
+      Right: 20, // px
+      Left: 20, // px
     },
   },
 };
