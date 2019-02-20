@@ -40,11 +40,11 @@
 ## Future Plans
 - [] Typescript
 
-Do you have suggestions or feedback? [Open an issue](https://github.com/fabe/gatsby-universal/issues/new)!
+Do you have suggestions or feedback? [Open an issue](https://github.com/lmnts-dev/lmnts-gatsby-starter/issues/new)!
 
 ## Lighthouse scores (on [Netlify](https://netlify.com))
 
-[![Lighthouse scores (on Netlify)](https://lighthouse.now.sh/?perf=100&pwa=100&a11y=100&bp=100&seo=100)](https://circleci.com/gh/fabe/gatsby-universal)
+[![Lighthouse scores (on Netlify)](https://lighthouse.now.sh/?perf=100&pwa=100&a11y=100&bp=100&seo=100)](https://circleci.com/gh/lmnts-dev/lmnts-gatsby-starter)
 
 ## Usage
 
