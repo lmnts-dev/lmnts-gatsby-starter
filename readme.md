@@ -17,9 +17,9 @@
 
 ## Features
 
-- [X] 🤩 Page Transitions, component-based (with no-js support)
-- [X] 👮‍♂️ `IntersectionObserver`, component-based (with polyfill)
-- [X] 🌿 React Context for global UI state, with SSR
+- [X] ✨ Page Transitions, component-based (with no-js support)
+- [X] 👀 `IntersectionObserver`, component-based (with polyfill)
+- [X] 🌌 React Context for global UI state, with SSR
 - [X] 💅 [`styled-components`](https://www.styled-components.com/) v4
 - [X] 💯 Optimized with [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/) (including test)
 - [X] 🔥 Code Splitting of CSS and JS (component based)
@@ -81,23 +81,14 @@ npm run build:favicons
 
 ## Configuration
 
-Find the site-wide configuration in `site-config.js`.
+Find the site-wide configuration in `Theme.js`.
 
-```js
-module.exports = {
-  siteTitle: `Laxalt & McIver Gatsby Starter`,
-  siteTitleShort: `lmnts-gatsby-starter`,
-  siteDescription: `An opinionated starter for Gatsby.`,
-  siteUrl: `https://laxaltandmciver.co/`,
-  themeColor: `#000`,
-  backgroundColor: `#fff`,
-  pathPrefix: null,
-  logo: path.resolve(__dirname, 'src/assets/images/icon.png'),
-  social: {
-    twitter: `gatsbyjs`,
-    fbAppId: `966242223397117`,
-  },
-};
+```bash
+├── src
+│   ├── constants
+│   │   ├── site # Core site information.
+│   │   ├── styles # Style information: global variables, palette, fonts, etc.
+│   │   └── Theme.js # Consolidated delivery of the above constants. I.e. adding 'px' to the end of integer values.
 ```
 
 > 🚨 Don't forget to update your `robots.txt` inside `static/`!
@@ -135,7 +126,7 @@ Elements are static, logic-less building blocks.
 │   ├── elements
 │   │   ├── Block
 │   │   ├── Inner
-│   │   ├── Section
+│   │   └── Section
 ```
 
 ### Components
@@ -145,7 +136,7 @@ Components are collections of Elements and often contain logic.
 │   ├── components
 │   │   ├── core # <Head> tag, transitions, Layout, IntersectionObserver, SEO generation
 │   │   ├── library # Various components needed for the site pages.
-│   │   ├── sitewide # Visible sitewide components: Navigation, footer, etc.
+│   │   └── sitewide # Visible sitewide components: Navigation, footer, etc.
 ```
 
 ### Building with these
