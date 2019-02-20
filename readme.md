@@ -44,6 +44,11 @@
 - ⚠️ Lazy load all images using IntersectionObserver
 - ⚠️ Add Lighthouse to `npm run commit` to automate Lighthouse Scores
 - ⚠️ Add Favicon Script to `npm run build` to automate Favicon Generation
+- ⚠️ Contentful Support
+- ⚠️ Wordpress Support
+- ⚠️ Shopify Support
+- ⚠️ NetlifyCMS Support
+- ⚠️ Drupal Support
 
 
 Do you have suggestions or feedback? [Open an issue](https://github.com/lmnts-dev/lmnts-gatsby-starter/issues/new)!
