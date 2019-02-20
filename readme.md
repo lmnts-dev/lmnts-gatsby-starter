@@ -38,7 +38,13 @@
 - [X] 👨‍🏫 ESLint (based on [`eslint-plugin-react`](./.eslintrc))
 
 ## Future Plans
-- [] Typescript
+- ⚠️ Typescript
+- ⚠️ Further Schema.org generation
+- ⚠️ Contextual page Schema.org & Keyword generation
+- ⚠️ Lazy load all images using IntersectionObserver
+- ⚠️ Add Lighthouse to `npm run commit` to automate Lighthouse Scores
+- ⚠️ Add Favicon Script to `npm run build` to automate Favicon Generation
+
 
 Do you have suggestions or feedback? [Open an issue](https://github.com/lmnts-dev/lmnts-gatsby-starter/issues/new)!
 
