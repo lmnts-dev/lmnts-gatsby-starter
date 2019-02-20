@@ -1,4 +1,4 @@
-// <Col> Component:
+// <Block> Component:
 // This is the sitewide column style of the website.
 
 // Imports
@@ -8,14 +8,14 @@
 import React from 'react';
 
 // Styles
-import ColStyle from 'blocks/Col/styles.scss';
+import Block from 'elements/Block/styles.scss';
 
 // Begin Component
 //////////////////////////////////////////////////////////////////////
 
-const Col = ({ children }) => <ColStyle>{children}</ColStyle>;
+const Block = ({ children }) => <Block>{children}</Block>;
 
-export default Col;
+export default Block;
 
 //////////////////////////////////////////////////////////////////////
 // End Component

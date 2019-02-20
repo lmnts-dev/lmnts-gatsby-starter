@@ -1,5 +1,5 @@
-// <Row> Component:
-// This is the sitewide Row Style of the website.
+// <Section> Component:
+// This is the sitewide Section Style of the website.
 
 // Imports
 //////////////////////////////////////////////////////////////////////
@@ -8,12 +8,12 @@
 import React from 'react';
 
 // Styles
-import { RowStyle } from 'blocks/Row/styles.scss';
+import { SectionStyle } from 'elements/Section/styles.scss';
 
 // Begin Block
 //////////////////////////////////////////////////////////////////////
 
-const Row = ({
+const Section = ({
   children,
   FullWidth,
   JustifyContent,
@@ -27,7 +27,7 @@ const Row = ({
   TextColor,
   MinHeight,
 }) => (
-  <RowStyle
+  <SectionStyle
     FullWidth={FullWidth}
     JustifyContent={JustifyContent}
     FlexDir={FlexDir}
@@ -41,10 +41,10 @@ const Row = ({
     MinHeight={MinHeight}
   >
     {children}
-  </RowStyle>
+  </SectionStyle>
 );
 
-export default Row;
+export default Section;
 
 //////////////////////////////////////////////////////////////////////
 // End Block

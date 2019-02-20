@@ -11,7 +11,7 @@ import { Theme } from 'constants/Theme';
 import { Base } from 'constants/styles/Base';
 
 // Blocks
-import InnerStyle from 'blocks/Inner/styles.scss';
+import InnerStyle from 'elements/Inner/styles.scss';
 
 // Begin Styles
 //////////////////////////////////////////////////////////////////////

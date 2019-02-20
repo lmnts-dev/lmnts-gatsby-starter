@@ -17,9 +17,9 @@ module.exports = {
   secondaryColor: `LightSalmon`,
   backgroundColor: `#fff`,
   pathPrefix: '/',
-  logo: path.resolve(__dirname, 'src/images/icon.png'),
-  logoLight: path.resolve(__dirname, 'src/images/icon.png'),
-  logoDark: path.resolve(__dirname, 'src/images/icon.png'),
+  logo: path.resolve(__dirname, 'src/assets/images/icon.png'),
+  logoLight: path.resolve(__dirname, 'src/assets/images/icon.png'),
+  logoDark: path.resolve(__dirname, 'src/assets/images/icon.png'),
   social: {
     twitter: `laxaltandmciver`,
     facebook: `laxaltandmciver`,

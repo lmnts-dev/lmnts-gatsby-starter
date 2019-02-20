@@ -1,5 +1,5 @@
-// <Row> Styles:
-// This is the primary Row style of the site.
+// <Section> Styles:
+// This is the primary Section style of the site.
 
 // Imports
 //////////////////////////////////////////////////////////////////////
@@ -13,7 +13,7 @@ import { Theme } from 'constants/Theme';
 // Begin Styles
 //////////////////////////////////////////////////////////////////////
 
-export const RowStyle = styled.section`
+export const SectionStyle = styled.section`
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -42,6 +42,6 @@ export const RowStyle = styled.section`
     props.PaddingBottom ? props.PaddingBottom : '0px'};
 `;
 
-export default RowStyle;
+export default SectionStyle;
 //////////////////////////////////////////////////////////////////////
 // End Styles

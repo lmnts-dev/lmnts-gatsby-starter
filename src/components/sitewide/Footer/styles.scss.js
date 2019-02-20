@@ -11,8 +11,8 @@ import { Theme } from 'constants/Theme';
 import { Base } from 'constants/styles/Base';
 
 // Blocks
-import InnerStyle from 'blocks/Inner/styles.scss';
-import RowStyle from 'blocks/Row/styles.scss';
+import InnerStyle from 'elements/Inner/styles.scss';
+import SectionStyle from 'elements/Section/styles.scss';
 
 // Begin Styles
 
@@ -22,7 +22,7 @@ const FooterStyle = styled.footer`
   justify-content: center;
 `;
 
-FooterStyle.Row = styled(RowStyle)`
+FooterStyle.Section = styled(SectionStyle)`
   background: ${Theme.Color.White};
 `;
 

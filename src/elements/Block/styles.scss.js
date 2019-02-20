@@ -1,4 +1,4 @@
-// <Col> Styles:
+// <Block> Styles:
 // This is the primary column component.
 
 // Imports
@@ -11,10 +11,10 @@ import styled from 'styled-components';
 // import { Theme } from 'constants/Theme';
 
 // Begin Styles
-export const ColStyle = styled.div`
+export const BlockStyle = styled.div`
   display: flex;
   flex-direction: column;
 `;
 
-export default ColStyle;
+export default BlockStyle;
 //////////////////////////////////////////////////////////////////////

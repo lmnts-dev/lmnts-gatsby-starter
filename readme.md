@@ -86,7 +86,7 @@ module.exports = {
   themeColor: `#000`,
   backgroundColor: `#fff`,
   pathPrefix: null,
-  logo: path.resolve(__dirname, 'src/images/icon.png'),
+  logo: path.resolve(__dirname, 'src/assets/images/icon.png'),
   social: {
     twitter: `gatsbyjs`,
     fbAppId: `966242223397117`,
@@ -97,6 +97,8 @@ module.exports = {
 > 🚨 Don't forget to update your `robots.txt` inside `static/`!
 
 ## Folder structure
+For further reading on methodolgy, keep sscrolling.
+
 ```bash
 ├── gatsby-browser.js # Specify how Gatsby renders pages in the browser
 ├── gatsby-config.js # Gatsby config, mostly taken from `site-config.js`
@@ -105,26 +107,60 @@ module.exports = {
 ├── site-config.js # Global settings for the whole site, used by multiple scripts
 ├── content # Content & data, in both json and markdown
 ├── src
+│   ├── assets
 │   ├── components
-│   │   ├── head # All meta tags etc.
-│   │   ├── io # Intersection Observer component, uses render props
-│   │   ├── layout # Layout component
-│   │   │   ├── layout.css.js # .css.js for component's `styled-components`
-│   │   │   └── layout.js
-│   │   └── transition # Page Transition component, used by Gatsby APIs
+│   ├── elements
 │   ├── constants # Site-wide constants (breakpoints, colors, etc.)
-│   ├── containers # Container components if store is needed
 │   ├── helpers
 │   │   ├── SchemaGenerator.js # Generates JSON-LD schema.org snippets
 │   │   └── MediaQueries.js # Creates media queries for styled-components
-│   ├── images # Images needed by the site/theme (not content)
 │   ├── pages
 │   ├── store # Store and provider of a React.createContext instance
-│   └── global.css.js # Global CSS
 └── scripts
     ├── lighthouse.test.js # Tests the site specified inside `site-config.js` with Google Lighthouse (WIP)
     └── favicons.js # Generates favicons and manifest using one png only.
 ```
+
+## Methodology
+### Elements
+Elements are static, logic-less building blocks.
+```bash
+├── src
+│   ├── elements
+│   │   ├── Block
+│   │   ├── Inner
+│   │   ├── Section
+```
+
+### Components
+Components are collections of Elements and often contain logic.
+```bash
+├── src
+│   ├── components
+│   │   ├── core # <Head> tag, transitions, Layout, IntersectionObserver, SEO generation
+│   │   ├── library # Various components needed for the site pages.
+│   │   ├── sitewide # Visible sitewide components: Navigation, footer, etc.
+```
+
+### Building with these
+We follow the guidelines below for typical generation and nesting of Elements:
+```bash
+<Section>
+  <Inner>
+    <Block>
+      # Content Here
+    </Block>
+  </Inner>
+</Section>
+```
+
+- `<Section>` : The wrapper of the elements. Uses the site's Base.js gutters. Always fullwidth.
+- `<Inner>` : The inner part of the section. Only one of these exist at all times. Always `relative`, and also can be various widths if needed.
+- `<Block>` : Various, repeatable elements. This is the core content container.
+
+### Componentizing collections of Elements
+
+<i>TODO: Pete will write this...</i>
 
 ## Author
 

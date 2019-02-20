@@ -11,10 +11,9 @@ import { Theme } from 'constants/Theme';
 import { Base } from 'constants/styles/Base';
 
 // Blocks
-import InnerStyle from 'blocks/Inner/styles.scss';
-import ColStyle from 'blocks/Col/styles.scss';
-import Row from 'blocks/Row';
-import Navigation from '.';
+import InnerStyle from 'elements/Inner/styles.scss';
+import BlockStyle from 'elements/Block/styles.scss';
+import Section from 'elements/Section';
 
 // Begin Styles
 //////////////////////////////////////////////////////////////////////
@@ -42,7 +41,7 @@ NavigationStyle.Inner = styled(InnerStyle)`
   color: ${Theme.Color.Black};
 `;
 
-NavigationStyle.Col = styled(ColStyle)`
+NavigationStyle.Block = styled(BlockStyle)`
   align-items: center;
   ul {
     display: flex;
@@ -58,7 +57,7 @@ NavigationStyle.Col = styled(ColStyle)`
   }
 `;
 
-NavigationStyle.Row = Row;
+NavigationStyle.Section = Section;
 
 export default NavigationStyle;
 

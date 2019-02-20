@@ -23,8 +23,11 @@ import { Theme } from 'constants/Theme';
 const Navigation = () => (
   <NavigationStyle>
     <NavigationStyle.Inner>
-      <NavigationStyle.Row AlignItems="center" JustifyContent="space-between">
-        <NavigationStyle.Col>
+      <NavigationStyle.Section
+        AlignItems="center"
+        JustifyContent="space-between"
+      >
+        <NavigationStyle.Block>
           <Link to={Theme.Site.BaseUrl}>
             <img
               src="https://cdn.dribbble.com/users/1826170/avatars/normal/56c47446d104c3768bbd90d907b1f238.jpg?1518642823"
@@ -32,8 +35,8 @@ const Navigation = () => (
               height="30px"
             />
           </Link>
-        </NavigationStyle.Col>
-        <NavigationStyle.Col>
+        </NavigationStyle.Block>
+        <NavigationStyle.Block>
           <ul>
             <Link to="/work">
               <li>Work</li>
@@ -45,8 +48,8 @@ const Navigation = () => (
               <li>Contact</li>
             </Link>
           </ul>
-        </NavigationStyle.Col>
-      </NavigationStyle.Row>
+        </NavigationStyle.Block>
+      </NavigationStyle.Section>
     </NavigationStyle.Inner>
   </NavigationStyle>
 );

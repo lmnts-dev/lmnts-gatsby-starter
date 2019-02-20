@@ -11,9 +11,9 @@ import React from 'react';
 import Layout from 'components/core/Layout';
 
 // Blocks
-import Row from 'blocks/Row';
-// import Inner from 'blocks/Inner';
-// import Col from 'blocks/Col';
+import Section from 'elements/Section';
+// import Inner from 'elements/Inner';
+// import Block from 'elements/Block';
 
 // Constants
 import { Theme } from 'constants/Theme';
@@ -23,7 +23,7 @@ import { Theme } from 'constants/Theme';
 
 const Index = ({ data }) => (
   <Layout>
-    <Row
+    <Section
       FlexDir="column"
       Background={Theme.Color.Success}
       PaddingTop={Theme.Base.Size}
@@ -34,7 +34,7 @@ const Index = ({ data }) => (
     >
       <h1>Contact</h1>
       <p>{Theme.Site.Description}</p>
-    </Row>
+    </Section>
   </Layout>
 );
 

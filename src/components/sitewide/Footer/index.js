@@ -18,12 +18,12 @@ import FooterStyle from 'components/sitewide/Footer/styles.scss';
 
 const Footer = () => (
   <FooterStyle>
-    <FooterStyle.Row>
+    <FooterStyle.Section>
       <FooterStyle.Inner>
         <strong>{Theme.Site.Title}</strong>
         <span>© {new Date().getFullYear()}</span>
       </FooterStyle.Inner>
-    </FooterStyle.Row>
+    </FooterStyle.Section>
   </FooterStyle>
 );
 

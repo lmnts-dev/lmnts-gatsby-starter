@@ -1,6 +1,6 @@
 import React from 'react';
 import { Consumer } from 'store/createContext';
-import Modal from 'components/modal';
+import Modal from '../modal';
 
 const ModalContainer = ({ children }) => (
   <Consumer>
