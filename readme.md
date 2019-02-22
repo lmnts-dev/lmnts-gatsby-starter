@@ -78,6 +78,8 @@ npm run build
 
 # To test SSR (for Lighthouse etc.)
 npm run ssr
+npm install -g lighthouse
+lighthouse localhost:9000 --view
 
 # To format JS (precommit)
 npm run format

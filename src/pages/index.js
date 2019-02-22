@@ -25,7 +25,7 @@ const Index = ({ data }) => (
   <Layout>
     <Section
       FlexDir="column"
-      Background={Theme.Color.Warning}
+      Background="PaleVioletRed"
       PaddingTop={Theme.Base.Size}
       PaddingBottom={Theme.Base.Size}
       MinHeight="40vh"
