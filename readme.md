@@ -36,6 +36,8 @@
 - [X] 🐙 Schema JSONLD
 - [X] 🔎 [`size-plugin`](https://github.com/GoogleChromeLabs/size-plugin) to keep an eye on your bundle sizes
 - [X] 👨‍🏫 ESLint (based on [`eslint-plugin-react`](./.eslintrc))
+- [X] 📈 Google Analytics with [`gatsby-plugin-google-analytics`](https://www.gatsbyjs.org/packages/gatsby-plugin-google-analytics/?=google%20analytics)
+- [X] 🧠 Machine-learning based prerendering and prefetching with [`guess.js`](https://www.gatsbyjs.org/packages/gatsby-plugin-guess-js/?=guess)
 
 ## Future Plans
 - ⚠️ Typescript
@@ -45,7 +47,6 @@
 - ⚠️ Add Lighthouse to `npm run commit` to automate Lighthouse Scores
 - ⚠️ Add Favicon Script to `npm run build` to automate Favicon Generation
 - ⚠️ Contentful Support
-- ⚠️ Add `gatsby-plugin-ga` Package
 - ⚠️ Wordpress Support
 - ⚠️ Shopify Support
 - ⚠️ NetlifyCMS Support
