@@ -44,7 +44,6 @@
 - ⚠️ Further Schema.org generation
 - ⚠️ Contextual page Schema.org & Keyword generation
 - ⚠️ Lazy load all images using IntersectionObserver
-- ⚠️ Add Lighthouse to `npm run commit` to automate Lighthouse Scores
 - ⚠️ Add Favicon Script to `npm run build` to automate Favicon Generation
 - ⚠️ Contentful Support
 - ⚠️ Wordpress Support
