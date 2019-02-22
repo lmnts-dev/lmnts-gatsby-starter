@@ -45,6 +45,7 @@
 - ⚠️ Add Lighthouse to `npm run commit` to automate Lighthouse Scores
 - ⚠️ Add Favicon Script to `npm run build` to automate Favicon Generation
 - ⚠️ Contentful Support
+- ⚠️ Add `gatsby-plugin-ga` Package
 - ⚠️ Wordpress Support
 - ⚠️ Shopify Support
 - ⚠️ NetlifyCMS Support
