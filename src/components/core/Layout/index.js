@@ -12,7 +12,6 @@ import { StaticQuery, graphql } from 'gatsby';
 
 //  Components
 import Head from 'components/core/Head';
-import Footer from 'components/sitewide/Footer';
 
 // Styles
 import GlobalStyle from 'constants/styles/GlobalStyles.scss.js';
@@ -26,7 +25,6 @@ const Layout = ({ data, children }) => (
     <GlobalStyle />
     <Head />
     <SiteGrid.Inner>{children}</SiteGrid.Inner>
-    <Footer />
   </SiteGrid>
 );
 

@@ -6,10 +6,10 @@
 export const Base = {
   Size: 60, // px
   Radius: 10, // px
-  SiteWidth: 2000, // px
+  SiteWidth: 1680, // px
   FontSize: 14, // px
   Transition: 0.25, // seconds
-  PageTransition: 800, // milliseconds
+  PageTransition: 350, // milliseconds. try to not go lower than 350ms or it gets buggy. TODO.
 
   // Responsive Breakpoints
   Media: {

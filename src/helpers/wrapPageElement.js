@@ -8,12 +8,14 @@
 import React from 'react';
 import Transition from 'components/core/Transition';
 import Navigation from 'components/sitewide/Navigation';
+import Footer from 'components/sitewide/Footer';
 
 const wrapPageElement = ({ element, props }) => {
   return (
     <>
       <Navigation />
       <Transition {...props}>{element}</Transition>
+      <Footer />
     </>
   );
 };
