@@ -45,6 +45,7 @@ export const Theme = {
     SiteWidth: Base.SiteWidth + 'px',
     FontSize: Base.FontSize + 'px',
     Transition: Base.Transition + 's',
+    Ease: Base.Ease,
     PageTransition: Base.PageTransition, // milliseconds
     Media: {
       Lg: Base.Media.Lg + 'px',

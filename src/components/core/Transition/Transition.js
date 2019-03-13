@@ -22,11 +22,21 @@ class Transition extends PureComponent {
 
     const RoutesContainer = posed.div({
       enter: {
+        x: 0,
         opacity: 1,
-        delay: Theme.Base.PageTransition,
-        delayChildren: Theme.Base.PageTransition,
+        delay: 1000,
+        beforeChildren: true,
+        transition: {
+          ease: Theme.Base.Ease,
+        },
       },
-      exit: { opacity: 0 },
+      exit: {
+        opacity: 0,
+        x: -50,
+        transition: {
+          ease: Theme.Base.Ease,
+        },
+      },
     });
 
     // To enable page transitions on mount / initial load,

@@ -9,7 +9,8 @@ export const Base = {
   SiteWidth: 1680, // px
   FontSize: 14, // px
   Transition: 0.25, // seconds
-  PageTransition: 350, // milliseconds. try to not go lower than 350ms or it gets buggy. TODO.
+  Ease: [1,.01,.49,1],
+  PageTransition: 2000, // milliseconds. try to not go lower than 350ms or it gets buggy. TODO.
 
   // Responsive Breakpoints
   Media: {
